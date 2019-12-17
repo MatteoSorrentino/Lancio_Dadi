@@ -39,7 +39,6 @@ namespace Lancio_Dadi
 
             lbl_risultato.Content=$"{Risultato}";
 
-
         }
 
         public int Lancio()
