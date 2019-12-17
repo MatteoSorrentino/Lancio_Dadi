@@ -33,11 +33,21 @@ namespace Lancio_Dadi
 
             var Dado2 = Task.Factory.StartNew(Lancio);
 
-            Task.WaitAll(Dado1, Dado2);
+            var Immagine = Task.Factory.StartNew(() =>
+            {
+                Task.WaitAll(Dado1, Dado2);
 
-            var Risultato = Dado1.Result + Dado2.Result;
+                var Risultato = Dado1.Result + Dado2.Result;
 
-            lbl_risultato.Content=$"{Risultato}";
+                Dispatcher.Invoke(() =>
+                img1.Source = new BitmapImage(new Uri($"Dadi/{Dado1.Result}.png", UriKind.Relative)));
+
+                Dispatcher.Invoke(() =>
+                img2.Source = new BitmapImage(new Uri($"Dadi/{Dado2.Result}.png", UriKind.Relative)));
+
+                Dispatcher.Invoke(() =>
+                lbl_risultato.Content = $"{Risultato}");
+            });
 
         }
 

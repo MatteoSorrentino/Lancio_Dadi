@@ -97,5 +97,16 @@
   <ItemGroup>
     <Resource Include="copertina.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tavolo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dadi\1.png" />
+    <Resource Include="Dadi\2.png" />
+    <Resource Include="Dadi\3.png" />
+    <Resource Include="Dadi\4.png" />
+    <Resource Include="Dadi\5.png" />
+    <Resource Include="Dadi\6.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

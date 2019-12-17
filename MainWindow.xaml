@@ -8,12 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush/>
+            <ImageBrush ImageSource="tavolo.jpg"/>
         </Grid.Background>
-        <Button x:Name="btn_lancia" Content="Lancia dadi" HorizontalAlignment="Left" Margin="560,69,0,0" VerticalAlignment="Top" Width="151" Height="60" BorderBrush="White" FontWeight="Bold" FontSize="16" Foreground="Black" Background="White" Click="Btn_lancia_Click"/>
-        <Label x:Name="lbl_risultato" HorizontalAlignment="Left" Margin="560,265,0,0" VerticalAlignment="Top" Height="57" Width="151"/>
-        <Image HorizontalAlignment="Left" Height="136" Margin="81,56,0,0" VerticalAlignment="Top" Width="152"/>
-        <Image HorizontalAlignment="Left" Height="136" Margin="320,56,0,0" VerticalAlignment="Top" Width="159"/>
+        <Button x:Name="btn_lancia" Content="Lancia dadi" HorizontalAlignment="Left" Margin="560,69,0,0" VerticalAlignment="Top" Width="151" Height="60" BorderBrush="White" FontWeight="Bold" FontSize="16" Foreground="Black" Background="#FF912323" Click="Btn_lancia_Click"/>
+        <Label x:Name="lbl_risultato" HorizontalAlignment="Left" Margin="613,226,0,0" VerticalAlignment="Top" Height="57" Width="64" FontSize="24" FontWeight="Bold"/>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="136" Margin="81,56,0,0" VerticalAlignment="Top" Width="152"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="136" Margin="320,56,0,0" VerticalAlignment="Top" Width="159"/>
 
     </Grid>
 </Window>
